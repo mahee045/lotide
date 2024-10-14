@@ -22,13 +22,30 @@ const eqObjects = function(object1, object2) {
 
 
 // FUNCTION IMPLEMENTATION
-const assertObjectsEqual = function(actual, expected) {
-  const inspect = require("util").inspect;  // This line imports the inspect function correctly
-  if (eqObjects(actual, expected)) {
-    console.log(`✅✅✅ Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
-  }
-};
 
-console.log(`Example label: ${inspect(actual)}`);
+  const assertObjectsEqual = function(actual, expected) {
+    const inspect = require("util").inspect; // Add this line
+  
+    // Compare objects using eqObjects
+    if (eqObjects(actual, expected)) {
+      console.log(`✅✅✅ Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
+    } else {
+      console.log(`🛑🛑🛑 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
+    }
+  };
+  
+  
+// Define some test objects
+const object1 = { a: '1', b: 2 };
+const object2 = { b: 2, a: '1' };
+const object3 = { a: '1', b: 2, c: 3 };
+const object4 = { a: '1', b: '2' };
+
+// Call assertObjectsEqual with test cases
+assertObjectsEqual(object1, object2); // Expect "Assertion Passed"
+assertObjectsEqual(object1, object3); // Expect "Assertion Failed"
+assertObjectsEqual(object1, object4); // Expect "Assertion Failed"
+
+///did not understand insturctions for this assignment without LarryAI
+
+
