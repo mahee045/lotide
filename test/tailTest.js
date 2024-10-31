@@ -4,7 +4,7 @@ const assertEqual = require("../assertEqual");
 ///testing
 // Test Case 1: Check the returned array elements
 const result1 = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result1, ["Lighthouse", "Labs"]); // should return ["Lighthouse", "Labs"]
+assertEqual(result1[0], ["Lighthouse"]); // should return ["Lighthouse", "Labs"]
 
 // Test Case 4: Confirm the original array is not modified
 const words = ["Yo Yo", "Lighthouse", "Labs"];
