@@ -1,7 +1,5 @@
 // TEST/ASSERTION FUNCTIONS
 
-const assertArraysEqual = require("../assertArraysEqual");
-
 
 // ACTUAL FUNCTION
 const middle = function(array) {
