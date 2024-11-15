@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@mahe045/lotide",
   "version": "1.0.0",
   "type": "commonjs",
   "description": "lotide",
@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/mahee045/lotide.git"
   },
-  "author": "",
+  "author": "Maheerah",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mahee045/lotide/issues"
