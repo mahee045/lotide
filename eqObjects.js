@@ -1,23 +1,6 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require("./assertEqual");
 
-const eqArrays = function(actual, expected) {  // Used when a key has multiple properties making it an array so we are going to compare the arrays
-  if (actual.length !== expected.length) {
-    return false;
-  }
-  // Compare each element in the arrays
-  for (let i = 0; i < actual.length; i++) {
-    if (actual[i] !== expected[i]) {
-      return false; // Return false if any element is not equal
-    }
-  }
-  return true; // Return true if all elements are equal
-};
+const eqArrays = require("./eqArrays");
 
 // Returns true if both objects have identical keys with identical values.
 // Otherwise, you get back a big fat false!

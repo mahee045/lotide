@@ -1,10 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require("./assertEqual");
 
 const findKeyByValue = function (object, value) {     ///value is the parameter u are trying to find within the object 
   const keys = Object.keys(object); // Get the keys of the object, thast why (object is in keys) //const keys could be named anything, i chose keys
